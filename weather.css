@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+   }
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./image/bg\ gifs.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containe{
+    width: 30%;
+    height: 605px;
+    background: white;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto',sans-serif;
+    transition: 0.6s ease-out;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-box input{
+    color: rgb(42, 37, 37);
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+}
+.search-box button{
+    /* cursor: pointer; */
+    width: 50px;
+    height: 40px;
+    color: black;
+    background: rgb(187, 184, 184);
+    border-radius: 50%;
+    font-size: 22px;
+    transition: .4s ease;
+}
+.search-box button:hover{
+    color: rgb(255, 254, 254);
+    background: black;
+}
+
+#result h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    margin: 1.25em 0;
+  }
+  .desc {
+    color: var(--off-white);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 2em;
+    margin-top: -0.7em;
+  }
+
+  #result img {
+    margin: 0.6em 0 0 0;
+    width: 6.2em;
+    filter: drop-shadow(0 1.8em 3.7em var(--shadow));
+  }
+  #result h1 {
+    font-size: 4em;
+    margin: 0.3em 0 0.7em 0;
+    line-height: 0;
+    font-weight: 400;
+    color: var(--white);
+  }
+  .temp-container {
+    display: flex;
+    justify-content: center;
+  }
+  .temp-container div {
+    padding: 0.3em 1em;
+  }
+
+  .temp-container .title {
+    font-weight: 600;
+    color: var(--white);
+  }
+  .temp-container .temp {
+    font-weight: 300;
+    color: var(--off-white);
+  }
+  .msg {
+    margin-top: 1.8em;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+@media(max-width: 765px) {
+    .containe{
+        width: 250%;
+        height: 70%;
+        margin-left: 10%;
+        margin-right: 5%;
+        padding: 0;
+    } 
+    .search-box{
+        margin-top: 10%;
+        margin-left: 10%;
+        width: 80%;
+        /* left: 0; */
+    }   
+   }
